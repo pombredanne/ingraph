@@ -1,0 +1,2593 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ingraph.cypher2relalg.tck.tests.WithAcceptanceParserTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ingraph.cypher2relalg.tck.tests.WithAcceptanceParserTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ingraph.cypher2relalg.tck.tests.html">ingraph.cypher2relalg.tck.tests</a> &gt; WithAcceptanceParserTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">17</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">12</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.359s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">29%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testWithAcceptance_03"></a>
+<h3 class="failures">testWithAcceptance_03</h3>
+<span class="code">
+<pre>java.lang.RuntimeException: Unrecoverable error during compilation: Variable name not found: a
+	at ingraph.cypher2relalg.util.IngraphLogger.unrecoverableError(IngraphLogger.java:88)
+	at ingraph.cypher2relalg.VariableBuilder._buildRelalgVariable(VariableBuilder.java:325)
+	at ingraph.cypher2relalg.VariableBuilder.buildRelalgVariable(VariableBuilder.java:610)
+	at ingraph.cypher2relalg.VariableBuilder.lambda$_buildVariableExpression$8(VariableBuilder.java:577)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.VariableBuilder._buildVariableExpression(VariableBuilder.java:582)
+	at ingraph.cypher2relalg.VariableBuilder.buildVariableExpression(VariableBuilder.java:632)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgExpression(RelalgBuilder.java:1094)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgExpression(RelalgBuilder.java:1724)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$null$8(RelalgBuilder.java:450)
+	at org.eclipse.xtext.xbase.lib.internal.FunctionDelegate.apply(FunctionDelegate.java:42)
+	at com.google.common.collect.Lists$TransformingRandomAccessList$1.transform(Lists.java:651)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at java.util.AbstractCollection.addAll(AbstractCollection.java:343)
+	at java.util.LinkedHashSet.&lt;init&gt;(LinkedHashSet.java:169)
+	at org.eclipse.emf.common.util.AbstractEList.getNonDuplicates(AbstractEList.java:1164)
+	at org.eclipse.emf.common.util.AbstractEList.addAll(AbstractEList.java:368)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$buildRelalgReturnBody$9(RelalgBuilder.java:454)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgReturnBody(RelalgBuilder.java:456)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgReturn(RelalgBuilder.java:601)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgReturn(RelalgBuilder.java:1641)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgSubQuery(RelalgBuilder.java:363)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:283)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1622)
+	at ingraph.cypher2relalg.RelalgBuilder.build(RelalgBuilder.java:214)
+	at ingraph.cypher2relalg.Cypher2Relalg.processCypher(Cypher2Relalg.java:22)
+	at ingraph.cypher2relalg.tck.tests.WithAcceptanceParserTest.testWithAcceptance_03(WithAcceptanceParserTest.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.GeneratedMethodAccessor80.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testWithAcceptance_04"></a>
+<h3 class="failures">testWithAcceptance_04</h3>
+<span class="code">
+<pre>java.lang.RuntimeException: Unrecoverable error during compilation: Variable name not found: property
+	at ingraph.cypher2relalg.util.IngraphLogger.unrecoverableError(IngraphLogger.java:88)
+	at ingraph.cypher2relalg.VariableBuilder._buildRelalgVariable(VariableBuilder.java:325)
+	at ingraph.cypher2relalg.VariableBuilder.buildRelalgVariable(VariableBuilder.java:610)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgComparableElement$37(RelalgBuilder.java:1030)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgComparableElement(RelalgBuilder.java:1034)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgComparableElement(RelalgBuilder.java:1701)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgLogicalExpression$32(RelalgBuilder.java:929)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgLogicalExpression(RelalgBuilder.java:936)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgLogicalExpression(RelalgBuilder.java:1658)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalg$19(RelalgBuilder.java:682)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:685)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1628)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$null$2(RelalgBuilder.java:329)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgSubQuery$3(RelalgBuilder.java:332)
+	at org.eclipse.xtext.xbase.lib.internal.FunctionDelegate.apply(FunctionDelegate.java:42)
+	at com.google.common.collect.Iterators$7.transform(Iterators.java:750)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at org.eclipse.xtext.xbase.lib.IteratorExtensions.head(IteratorExtensions.java:140)
+	at org.eclipse.xtext.xbase.lib.IterableExtensions.head(IterableExtensions.java:119)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgSubQuery(RelalgBuilder.java:338)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:283)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1622)
+	at ingraph.cypher2relalg.RelalgBuilder.build(RelalgBuilder.java:214)
+	at ingraph.cypher2relalg.Cypher2Relalg.processCypher(Cypher2Relalg.java:22)
+	at ingraph.cypher2relalg.tck.tests.WithAcceptanceParserTest.testWithAcceptance_04(WithAcceptanceParserTest.java:125)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.GeneratedMethodAccessor80.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testWithAcceptance_05"></a>
+<h3 class="failures">testWithAcceptance_05</h3>
+<span class="code">
+<pre>java.lang.RuntimeException: Unrecoverable error during compilation: Variable name not found: property
+	at ingraph.cypher2relalg.util.IngraphLogger.unrecoverableError(IngraphLogger.java:88)
+	at ingraph.cypher2relalg.VariableBuilder._buildRelalgVariable(VariableBuilder.java:325)
+	at ingraph.cypher2relalg.VariableBuilder.buildRelalgVariable(VariableBuilder.java:610)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgComparableElement$37(RelalgBuilder.java:1030)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgComparableElement(RelalgBuilder.java:1034)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgComparableElement(RelalgBuilder.java:1701)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgLogicalExpression$32(RelalgBuilder.java:932)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgLogicalExpression(RelalgBuilder.java:936)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgLogicalExpression(RelalgBuilder.java:1658)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalg$19(RelalgBuilder.java:682)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:685)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1628)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$null$2(RelalgBuilder.java:329)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgSubQuery$3(RelalgBuilder.java:332)
+	at org.eclipse.xtext.xbase.lib.internal.FunctionDelegate.apply(FunctionDelegate.java:42)
+	at com.google.common.collect.Iterators$7.transform(Iterators.java:750)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at org.eclipse.xtext.xbase.lib.IteratorExtensions.head(IteratorExtensions.java:140)
+	at org.eclipse.xtext.xbase.lib.IterableExtensions.head(IterableExtensions.java:119)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgSubQuery(RelalgBuilder.java:338)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:283)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1622)
+	at ingraph.cypher2relalg.RelalgBuilder.build(RelalgBuilder.java:214)
+	at ingraph.cypher2relalg.Cypher2Relalg.processCypher(Cypher2Relalg.java:22)
+	at ingraph.cypher2relalg.tck.tests.WithAcceptanceParserTest.testWithAcceptance_05(WithAcceptanceParserTest.java:157)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.GeneratedMethodAccessor80.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testWithAcceptance_06"></a>
+<h3 class="failures">testWithAcceptance_06</h3>
+<span class="code">
+<pre>java.lang.RuntimeException: Unrecoverable error during compilation: Variable name not found: idToUse
+	at ingraph.cypher2relalg.util.IngraphLogger.unrecoverableError(IngraphLogger.java:88)
+	at ingraph.cypher2relalg.VariableBuilder._buildRelalgVariable(VariableBuilder.java:325)
+	at ingraph.cypher2relalg.VariableBuilder.buildRelalgVariable(VariableBuilder.java:610)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgComparableElement$37(RelalgBuilder.java:1030)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgComparableElement(RelalgBuilder.java:1034)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgComparableElement(RelalgBuilder.java:1701)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgLogicalExpression$32(RelalgBuilder.java:932)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgLogicalExpression(RelalgBuilder.java:936)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgLogicalExpression(RelalgBuilder.java:1658)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalg$19(RelalgBuilder.java:682)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:685)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1628)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$null$2(RelalgBuilder.java:329)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgSubQuery$3(RelalgBuilder.java:332)
+	at org.eclipse.xtext.xbase.lib.internal.FunctionDelegate.apply(FunctionDelegate.java:42)
+	at com.google.common.collect.Iterators$7.transform(Iterators.java:750)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at org.eclipse.xtext.xbase.lib.IteratorExtensions.head(IteratorExtensions.java:140)
+	at org.eclipse.xtext.xbase.lib.IterableExtensions.head(IterableExtensions.java:119)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgSubQuery(RelalgBuilder.java:338)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:283)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1622)
+	at ingraph.cypher2relalg.RelalgBuilder.build(RelalgBuilder.java:214)
+	at ingraph.cypher2relalg.Cypher2Relalg.processCypher(Cypher2Relalg.java:22)
+	at ingraph.cypher2relalg.tck.tests.WithAcceptanceParserTest.testWithAcceptance_06(WithAcceptanceParserTest.java:191)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.GeneratedMethodAccessor80.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testWithAcceptance_07"></a>
+<h3 class="failures">testWithAcceptance_07</h3>
+<span class="code">
+<pre>java.lang.UnsupportedOperationException: Not supported (yet) WHERE clause in WITH is unsupported.
+	at ingraph.cypher2relalg.util.IngraphLogger.unsupported(IngraphLogger.java:75)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgReturn(RelalgBuilder.java:612)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgReturn(RelalgBuilder.java:1643)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgSubQuery(RelalgBuilder.java:363)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:283)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1622)
+	at ingraph.cypher2relalg.RelalgBuilder.build(RelalgBuilder.java:214)
+	at ingraph.cypher2relalg.Cypher2Relalg.processCypher(Cypher2Relalg.java:22)
+	at ingraph.cypher2relalg.tck.tests.WithAcceptanceParserTest.testWithAcceptance_07(WithAcceptanceParserTest.java:219)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.GeneratedMethodAccessor80.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testWithAcceptance_08"></a>
+<h3 class="failures">testWithAcceptance_08</h3>
+<span class="code">
+<pre>java.lang.UnsupportedOperationException: Not supported (yet) WHERE clause in WITH is unsupported.
+	at ingraph.cypher2relalg.util.IngraphLogger.unsupported(IngraphLogger.java:75)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgReturn(RelalgBuilder.java:612)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgReturn(RelalgBuilder.java:1643)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgSubQuery(RelalgBuilder.java:363)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:283)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1622)
+	at ingraph.cypher2relalg.RelalgBuilder.build(RelalgBuilder.java:214)
+	at ingraph.cypher2relalg.Cypher2Relalg.processCypher(Cypher2Relalg.java:22)
+	at ingraph.cypher2relalg.tck.tests.WithAcceptanceParserTest.testWithAcceptance_08(WithAcceptanceParserTest.java:250)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.GeneratedMethodAccessor80.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testWithAcceptance_09"></a>
+<h3 class="failures">testWithAcceptance_09</h3>
+<span class="code">
+<pre>java.lang.RuntimeException: Unrecoverable error during compilation: RETURN clause processed and resulted in no columns values to return
+	at ingraph.cypher2relalg.util.IngraphLogger.unrecoverableError(IngraphLogger.java:88)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgReturnBody(RelalgBuilder.java:462)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgReturn(RelalgBuilder.java:601)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgReturn(RelalgBuilder.java:1641)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgSubQuery(RelalgBuilder.java:363)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:283)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1622)
+	at ingraph.cypher2relalg.RelalgBuilder.build(RelalgBuilder.java:214)
+	at ingraph.cypher2relalg.Cypher2Relalg.processCypher(Cypher2Relalg.java:22)
+	at ingraph.cypher2relalg.tck.tests.WithAcceptanceParserTest.testWithAcceptance_09(WithAcceptanceParserTest.java:278)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.GeneratedMethodAccessor80.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testWithAcceptance_10"></a>
+<h3 class="failures">testWithAcceptance_10</h3>
+<span class="code">
+<pre>java.lang.RuntimeException: Unrecoverable error during compilation: RETURN clause processed and resulted in no columns values to return
+	at ingraph.cypher2relalg.util.IngraphLogger.unrecoverableError(IngraphLogger.java:88)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgReturnBody(RelalgBuilder.java:462)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgReturn(RelalgBuilder.java:601)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgReturn(RelalgBuilder.java:1641)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgSubQuery(RelalgBuilder.java:363)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:283)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1622)
+	at ingraph.cypher2relalg.RelalgBuilder.build(RelalgBuilder.java:214)
+	at ingraph.cypher2relalg.Cypher2Relalg.processCypher(Cypher2Relalg.java:22)
+	at ingraph.cypher2relalg.tck.tests.WithAcceptanceParserTest.testWithAcceptance_10(WithAcceptanceParserTest.java:306)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.GeneratedMethodAccessor80.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testWithAcceptance_11"></a>
+<h3 class="failures">testWithAcceptance_11</h3>
+<span class="code">
+<pre>java.lang.UnsupportedOperationException: Not supported (yet) WHERE clause in WITH is unsupported.
+	at ingraph.cypher2relalg.util.IngraphLogger.unsupported(IngraphLogger.java:75)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgReturn(RelalgBuilder.java:612)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgReturn(RelalgBuilder.java:1643)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgSubQuery(RelalgBuilder.java:363)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:283)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1622)
+	at ingraph.cypher2relalg.RelalgBuilder.build(RelalgBuilder.java:214)
+	at ingraph.cypher2relalg.Cypher2Relalg.processCypher(Cypher2Relalg.java:22)
+	at ingraph.cypher2relalg.tck.tests.WithAcceptanceParserTest.testWithAcceptance_11(WithAcceptanceParserTest.java:334)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.GeneratedMethodAccessor80.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testWithAcceptance_14"></a>
+<h3 class="failures">testWithAcceptance_14</h3>
+<span class="code">
+<pre>java.lang.RuntimeException: Unrecoverable error during compilation: Variable name not found: nestedMap
+	at ingraph.cypher2relalg.util.IngraphLogger.unrecoverableError(IngraphLogger.java:88)
+	at ingraph.cypher2relalg.VariableBuilder._buildRelalgVariable(VariableBuilder.java:325)
+	at ingraph.cypher2relalg.VariableBuilder.buildRelalgVariable(VariableBuilder.java:610)
+	at ingraph.cypher2relalg.VariableBuilder._buildRelalgVariable(VariableBuilder.java:271)
+	at ingraph.cypher2relalg.VariableBuilder.buildRelalgVariable(VariableBuilder.java:608)
+	at ingraph.cypher2relalg.VariableBuilder._buildRelalgVariable(VariableBuilder.java:271)
+	at ingraph.cypher2relalg.VariableBuilder.buildRelalgVariable(VariableBuilder.java:608)
+	at ingraph.cypher2relalg.VariableBuilder.lambda$_buildVariableExpression$9(VariableBuilder.java:598)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.VariableBuilder._buildVariableExpression(VariableBuilder.java:603)
+	at ingraph.cypher2relalg.VariableBuilder.buildVariableExpression(VariableBuilder.java:630)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgExpression(RelalgBuilder.java:1163)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgExpression(RelalgBuilder.java:1718)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$null$8(RelalgBuilder.java:450)
+	at org.eclipse.xtext.xbase.lib.internal.FunctionDelegate.apply(FunctionDelegate.java:42)
+	at com.google.common.collect.Lists$TransformingRandomAccessList$1.transform(Lists.java:651)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at java.util.AbstractCollection.addAll(AbstractCollection.java:343)
+	at java.util.LinkedHashSet.&lt;init&gt;(LinkedHashSet.java:169)
+	at org.eclipse.emf.common.util.AbstractEList.getNonDuplicates(AbstractEList.java:1164)
+	at org.eclipse.emf.common.util.AbstractEList.addAll(AbstractEList.java:368)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$buildRelalgReturnBody$9(RelalgBuilder.java:454)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgReturnBody(RelalgBuilder.java:456)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgReturn(RelalgBuilder.java:601)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgReturn(RelalgBuilder.java:1641)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgSubQuery(RelalgBuilder.java:363)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:283)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1622)
+	at ingraph.cypher2relalg.RelalgBuilder.build(RelalgBuilder.java:214)
+	at ingraph.cypher2relalg.Cypher2Relalg.processCypher(Cypher2Relalg.java:22)
+	at ingraph.cypher2relalg.tck.tests.WithAcceptanceParserTest.testWithAcceptance_14(WithAcceptanceParserTest.java:404)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.GeneratedMethodAccessor80.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testWithAcceptance_16"></a>
+<h3 class="failures">testWithAcceptance_16</h3>
+<span class="code">
+<pre>java.lang.UnsupportedOperationException: Not supported (yet) WHERE clause in WITH is unsupported.
+	at ingraph.cypher2relalg.util.IngraphLogger.unsupported(IngraphLogger.java:75)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgReturn(RelalgBuilder.java:612)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgReturn(RelalgBuilder.java:1643)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgSubQuery(RelalgBuilder.java:363)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:283)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1622)
+	at ingraph.cypher2relalg.RelalgBuilder.build(RelalgBuilder.java:214)
+	at ingraph.cypher2relalg.Cypher2Relalg.processCypher(Cypher2Relalg.java:22)
+	at ingraph.cypher2relalg.tck.tests.WithAcceptanceParserTest.testWithAcceptance_16(WithAcceptanceParserTest.java:459)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.GeneratedMethodAccessor80.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testWithAcceptance_17"></a>
+<h3 class="failures">testWithAcceptance_17</h3>
+<span class="code">
+<pre>java.lang.UnsupportedOperationException: Not supported (yet) WHERE clause in WITH is unsupported.
+	at ingraph.cypher2relalg.util.IngraphLogger.unsupported(IngraphLogger.java:75)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgReturn(RelalgBuilder.java:612)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgReturn(RelalgBuilder.java:1643)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgSubQuery(RelalgBuilder.java:363)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:283)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1622)
+	at ingraph.cypher2relalg.RelalgBuilder.build(RelalgBuilder.java:214)
+	at ingraph.cypher2relalg.Cypher2Relalg.processCypher(Cypher2Relalg.java:22)
+	at ingraph.cypher2relalg.tck.tests.WithAcceptanceParserTest.testWithAcceptance_17(WithAcceptanceParserTest.java:500)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.GeneratedMethodAccessor80.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testWithAcceptance_01</td>
+<td>0.088s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testWithAcceptance_02</td>
+<td>0.096s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">testWithAcceptance_03</td>
+<td>0.238s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testWithAcceptance_04</td>
+<td>0.219s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testWithAcceptance_05</td>
+<td>0.119s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testWithAcceptance_06</td>
+<td>0.094s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testWithAcceptance_07</td>
+<td>0.093s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testWithAcceptance_08</td>
+<td>0.091s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testWithAcceptance_09</td>
+<td>0.172s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testWithAcceptance_10</td>
+<td>0.107s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testWithAcceptance_11</td>
+<td>0.098s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">testWithAcceptance_12</td>
+<td>0.088s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testWithAcceptance_13</td>
+<td>0.096s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">testWithAcceptance_14</td>
+<td>0.120s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">testWithAcceptance_15</td>
+<td>0.102s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">testWithAcceptance_16</td>
+<td>0.120s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testWithAcceptance_17</td>
+<td>0.418s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: a
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: property
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: idToUse
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:44 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+WARNING: RETURN * encountered but no vertexvariable nor edgevariable found in the query
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: RETURN clause processed and resulted in no columns values to return
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: Variable name not found: nestedMap
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:45 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:46 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:46 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+Mar 03, 2017 8:50:46 AM ingraph.cypher2relalg.util.IngraphLogger log
+SEVERE: WHERE clause in WITH is unsupported.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.0</a> at Mar 3, 2017 8:50:47 AM</p>
+</div>
+</div>
+</body>
+</html>

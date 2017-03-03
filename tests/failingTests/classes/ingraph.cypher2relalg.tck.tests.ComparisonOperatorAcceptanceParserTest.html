@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ingraph.cypher2relalg.tck.tests.ComparisonOperatorAcceptanceParserTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ingraph.cypher2relalg.tck.tests.ComparisonOperatorAcceptanceParserTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/ingraph.cypher2relalg.tck.tests.html">ingraph.cypher2relalg.tck.tests</a> &gt; ComparisonOperatorAcceptanceParserTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">10</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">10</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.763s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testComparisonOperatorAcceptance_01"></a>
+<h3 class="failures">testComparisonOperatorAcceptance_01</h3>
+<span class="code">
+<pre>java.lang.IllegalArgumentException: Unhandled parameter types: [org.slizaa.neo4j.opencypher.openCypher.impl.ExpressionComparisonImpl@242c5513 (operator: &lt;)]
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgComparableElement(RelalgBuilder.java:1704)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgLogicalExpression$32(RelalgBuilder.java:929)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgLogicalExpression(RelalgBuilder.java:936)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgLogicalExpression(RelalgBuilder.java:1658)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalg$19(RelalgBuilder.java:682)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:685)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1628)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$null$2(RelalgBuilder.java:329)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgSubQuery$3(RelalgBuilder.java:332)
+	at org.eclipse.xtext.xbase.lib.internal.FunctionDelegate.apply(FunctionDelegate.java:42)
+	at com.google.common.collect.Iterators$7.transform(Iterators.java:750)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at org.eclipse.xtext.xbase.lib.IteratorExtensions.head(IteratorExtensions.java:140)
+	at org.eclipse.xtext.xbase.lib.IterableExtensions.head(IterableExtensions.java:119)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgSubQuery(RelalgBuilder.java:338)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:283)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1622)
+	at ingraph.cypher2relalg.RelalgBuilder.build(RelalgBuilder.java:214)
+	at ingraph.cypher2relalg.Cypher2Relalg.processCypher(Cypher2Relalg.java:22)
+	at ingraph.cypher2relalg.tck.tests.ComparisonOperatorAcceptanceParserTest.testComparisonOperatorAcceptance_01(ComparisonOperatorAcceptanceParserTest.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testComparisonOperatorAcceptance_02"></a>
+<h3 class="failures">testComparisonOperatorAcceptance_02</h3>
+<span class="code">
+<pre>java.lang.IllegalArgumentException: Unhandled parameter types: [org.slizaa.neo4j.opencypher.openCypher.impl.ExpressionComparisonImpl@488fe0cc (operator: &lt;)]
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgComparableElement(RelalgBuilder.java:1704)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgLogicalExpression$32(RelalgBuilder.java:929)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgLogicalExpression(RelalgBuilder.java:936)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgLogicalExpression(RelalgBuilder.java:1658)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalg$19(RelalgBuilder.java:682)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:685)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1628)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$null$2(RelalgBuilder.java:329)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgSubQuery$3(RelalgBuilder.java:332)
+	at org.eclipse.xtext.xbase.lib.internal.FunctionDelegate.apply(FunctionDelegate.java:42)
+	at com.google.common.collect.Iterators$7.transform(Iterators.java:750)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at org.eclipse.xtext.xbase.lib.IteratorExtensions.head(IteratorExtensions.java:140)
+	at org.eclipse.xtext.xbase.lib.IterableExtensions.head(IterableExtensions.java:119)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgSubQuery(RelalgBuilder.java:338)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:283)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1622)
+	at ingraph.cypher2relalg.RelalgBuilder.build(RelalgBuilder.java:214)
+	at ingraph.cypher2relalg.Cypher2Relalg.processCypher(Cypher2Relalg.java:22)
+	at ingraph.cypher2relalg.tck.tests.ComparisonOperatorAcceptanceParserTest.testComparisonOperatorAcceptance_02(ComparisonOperatorAcceptanceParserTest.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testComparisonOperatorAcceptance_03"></a>
+<h3 class="failures">testComparisonOperatorAcceptance_03</h3>
+<span class="code">
+<pre>java.lang.IllegalArgumentException: Unhandled parameter types: [org.slizaa.neo4j.opencypher.openCypher.impl.ExpressionComparisonImpl@5c7debb3 (operator: &lt;=)]
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgComparableElement(RelalgBuilder.java:1704)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgLogicalExpression$32(RelalgBuilder.java:929)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgLogicalExpression(RelalgBuilder.java:936)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgLogicalExpression(RelalgBuilder.java:1658)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalg$19(RelalgBuilder.java:682)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:685)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1628)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$null$2(RelalgBuilder.java:329)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgSubQuery$3(RelalgBuilder.java:332)
+	at org.eclipse.xtext.xbase.lib.internal.FunctionDelegate.apply(FunctionDelegate.java:42)
+	at com.google.common.collect.Iterators$7.transform(Iterators.java:750)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at org.eclipse.xtext.xbase.lib.IteratorExtensions.head(IteratorExtensions.java:140)
+	at org.eclipse.xtext.xbase.lib.IterableExtensions.head(IterableExtensions.java:119)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgSubQuery(RelalgBuilder.java:338)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:283)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1622)
+	at ingraph.cypher2relalg.RelalgBuilder.build(RelalgBuilder.java:214)
+	at ingraph.cypher2relalg.Cypher2Relalg.processCypher(Cypher2Relalg.java:22)
+	at ingraph.cypher2relalg.tck.tests.ComparisonOperatorAcceptanceParserTest.testComparisonOperatorAcceptance_03(ComparisonOperatorAcceptanceParserTest.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testComparisonOperatorAcceptance_04"></a>
+<h3 class="failures">testComparisonOperatorAcceptance_04</h3>
+<span class="code">
+<pre>java.lang.IllegalArgumentException: Unhandled parameter types: [org.slizaa.neo4j.opencypher.openCypher.impl.ExpressionComparisonImpl@143b9fe7 (operator: &lt;=)]
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgComparableElement(RelalgBuilder.java:1704)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgLogicalExpression$32(RelalgBuilder.java:929)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgLogicalExpression(RelalgBuilder.java:936)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgLogicalExpression(RelalgBuilder.java:1658)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalg$19(RelalgBuilder.java:682)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:685)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1628)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$null$2(RelalgBuilder.java:329)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgSubQuery$3(RelalgBuilder.java:332)
+	at org.eclipse.xtext.xbase.lib.internal.FunctionDelegate.apply(FunctionDelegate.java:42)
+	at com.google.common.collect.Iterators$7.transform(Iterators.java:750)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at org.eclipse.xtext.xbase.lib.IteratorExtensions.head(IteratorExtensions.java:140)
+	at org.eclipse.xtext.xbase.lib.IterableExtensions.head(IterableExtensions.java:119)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgSubQuery(RelalgBuilder.java:338)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:283)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1622)
+	at ingraph.cypher2relalg.RelalgBuilder.build(RelalgBuilder.java:214)
+	at ingraph.cypher2relalg.Cypher2Relalg.processCypher(Cypher2Relalg.java:22)
+	at ingraph.cypher2relalg.tck.tests.ComparisonOperatorAcceptanceParserTest.testComparisonOperatorAcceptance_04(ComparisonOperatorAcceptanceParserTest.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testComparisonOperatorAcceptance_05"></a>
+<h3 class="failures">testComparisonOperatorAcceptance_05</h3>
+<span class="code">
+<pre>java.lang.IllegalArgumentException: Unhandled parameter types: [org.slizaa.neo4j.opencypher.openCypher.impl.ExpressionComparisonImpl@3099d63d (operator: &lt;)]
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgComparableElement(RelalgBuilder.java:1704)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgLogicalExpression$32(RelalgBuilder.java:929)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgLogicalExpression(RelalgBuilder.java:936)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgLogicalExpression(RelalgBuilder.java:1658)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalg$19(RelalgBuilder.java:682)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:685)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1628)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$null$2(RelalgBuilder.java:329)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgSubQuery$3(RelalgBuilder.java:332)
+	at org.eclipse.xtext.xbase.lib.internal.FunctionDelegate.apply(FunctionDelegate.java:42)
+	at com.google.common.collect.Iterators$7.transform(Iterators.java:750)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at org.eclipse.xtext.xbase.lib.IteratorExtensions.head(IteratorExtensions.java:140)
+	at org.eclipse.xtext.xbase.lib.IterableExtensions.head(IterableExtensions.java:119)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgSubQuery(RelalgBuilder.java:338)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:283)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1622)
+	at ingraph.cypher2relalg.RelalgBuilder.build(RelalgBuilder.java:214)
+	at ingraph.cypher2relalg.Cypher2Relalg.processCypher(Cypher2Relalg.java:22)
+	at ingraph.cypher2relalg.tck.tests.ComparisonOperatorAcceptanceParserTest.testComparisonOperatorAcceptance_05(ComparisonOperatorAcceptanceParserTest.java:137)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testComparisonOperatorAcceptance_06"></a>
+<h3 class="failures">testComparisonOperatorAcceptance_06</h3>
+<span class="code">
+<pre>java.lang.IllegalArgumentException: Unhandled parameter types: [org.slizaa.neo4j.opencypher.openCypher.impl.ExpressionComparisonImpl@77069a92 (operator: &lt;)]
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgComparableElement(RelalgBuilder.java:1704)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgLogicalExpression$32(RelalgBuilder.java:929)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgLogicalExpression(RelalgBuilder.java:936)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgLogicalExpression(RelalgBuilder.java:1658)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalg$19(RelalgBuilder.java:682)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:685)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1628)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$null$2(RelalgBuilder.java:329)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgSubQuery$3(RelalgBuilder.java:332)
+	at org.eclipse.xtext.xbase.lib.internal.FunctionDelegate.apply(FunctionDelegate.java:42)
+	at com.google.common.collect.Iterators$7.transform(Iterators.java:750)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at org.eclipse.xtext.xbase.lib.IteratorExtensions.head(IteratorExtensions.java:140)
+	at org.eclipse.xtext.xbase.lib.IterableExtensions.head(IterableExtensions.java:119)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgSubQuery(RelalgBuilder.java:338)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:283)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1622)
+	at ingraph.cypher2relalg.RelalgBuilder.build(RelalgBuilder.java:214)
+	at ingraph.cypher2relalg.Cypher2Relalg.processCypher(Cypher2Relalg.java:22)
+	at ingraph.cypher2relalg.tck.tests.ComparisonOperatorAcceptanceParserTest.testComparisonOperatorAcceptance_06(ComparisonOperatorAcceptanceParserTest.java:162)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testComparisonOperatorAcceptance_07"></a>
+<h3 class="failures">testComparisonOperatorAcceptance_07</h3>
+<span class="code">
+<pre>java.lang.IllegalArgumentException: Unhandled parameter types: [org.slizaa.neo4j.opencypher.openCypher.impl.ExpressionComparisonImpl@11d42ff3 (operator: &lt;=)]
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgComparableElement(RelalgBuilder.java:1704)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgLogicalExpression$32(RelalgBuilder.java:929)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgLogicalExpression(RelalgBuilder.java:936)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgLogicalExpression(RelalgBuilder.java:1658)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalg$19(RelalgBuilder.java:682)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:685)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1628)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$null$2(RelalgBuilder.java:329)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgSubQuery$3(RelalgBuilder.java:332)
+	at org.eclipse.xtext.xbase.lib.internal.FunctionDelegate.apply(FunctionDelegate.java:42)
+	at com.google.common.collect.Iterators$7.transform(Iterators.java:750)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at org.eclipse.xtext.xbase.lib.IteratorExtensions.head(IteratorExtensions.java:140)
+	at org.eclipse.xtext.xbase.lib.IterableExtensions.head(IterableExtensions.java:119)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgSubQuery(RelalgBuilder.java:338)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:283)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1622)
+	at ingraph.cypher2relalg.RelalgBuilder.build(RelalgBuilder.java:214)
+	at ingraph.cypher2relalg.Cypher2Relalg.processCypher(Cypher2Relalg.java:22)
+	at ingraph.cypher2relalg.tck.tests.ComparisonOperatorAcceptanceParserTest.testComparisonOperatorAcceptance_07(ComparisonOperatorAcceptanceParserTest.java:187)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testComparisonOperatorAcceptance_08"></a>
+<h3 class="failures">testComparisonOperatorAcceptance_08</h3>
+<span class="code">
+<pre>java.lang.IllegalArgumentException: Unhandled parameter types: [org.slizaa.neo4j.opencypher.openCypher.impl.ExpressionComparisonImpl@50882442 (operator: &lt;=)]
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgComparableElement(RelalgBuilder.java:1704)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgLogicalExpression$32(RelalgBuilder.java:929)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgLogicalExpression(RelalgBuilder.java:936)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgLogicalExpression(RelalgBuilder.java:1658)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalg$19(RelalgBuilder.java:682)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:685)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1628)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$null$2(RelalgBuilder.java:329)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgSubQuery$3(RelalgBuilder.java:332)
+	at org.eclipse.xtext.xbase.lib.internal.FunctionDelegate.apply(FunctionDelegate.java:42)
+	at com.google.common.collect.Iterators$7.transform(Iterators.java:750)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at org.eclipse.xtext.xbase.lib.IteratorExtensions.head(IteratorExtensions.java:140)
+	at org.eclipse.xtext.xbase.lib.IterableExtensions.head(IterableExtensions.java:119)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgSubQuery(RelalgBuilder.java:338)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:283)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1622)
+	at ingraph.cypher2relalg.RelalgBuilder.build(RelalgBuilder.java:214)
+	at ingraph.cypher2relalg.Cypher2Relalg.processCypher(Cypher2Relalg.java:22)
+	at ingraph.cypher2relalg.tck.tests.ComparisonOperatorAcceptanceParserTest.testComparisonOperatorAcceptance_08(ComparisonOperatorAcceptanceParserTest.java:212)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testComparisonOperatorAcceptance_09"></a>
+<h3 class="failures">testComparisonOperatorAcceptance_09</h3>
+<span class="code">
+<pre>java.lang.IllegalArgumentException: Unhandled parameter types: [org.slizaa.neo4j.opencypher.openCypher.impl.ExpressionComparisonImpl@27f3f07 (operator: &lt;)]
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgComparableElement(RelalgBuilder.java:1704)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgLogicalExpression$32(RelalgBuilder.java:929)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgLogicalExpression(RelalgBuilder.java:936)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgLogicalExpression(RelalgBuilder.java:1658)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalg$19(RelalgBuilder.java:682)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:685)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1628)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$null$2(RelalgBuilder.java:329)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgSubQuery$3(RelalgBuilder.java:332)
+	at org.eclipse.xtext.xbase.lib.internal.FunctionDelegate.apply(FunctionDelegate.java:42)
+	at com.google.common.collect.Iterators$7.transform(Iterators.java:750)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at org.eclipse.xtext.xbase.lib.IteratorExtensions.head(IteratorExtensions.java:140)
+	at org.eclipse.xtext.xbase.lib.IterableExtensions.head(IterableExtensions.java:119)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgSubQuery(RelalgBuilder.java:338)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:283)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1622)
+	at ingraph.cypher2relalg.RelalgBuilder.build(RelalgBuilder.java:214)
+	at ingraph.cypher2relalg.Cypher2Relalg.processCypher(Cypher2Relalg.java:22)
+	at ingraph.cypher2relalg.tck.tests.ComparisonOperatorAcceptanceParserTest.testComparisonOperatorAcceptance_09(ComparisonOperatorAcceptanceParserTest.java:236)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testComparisonOperatorAcceptance_10"></a>
+<h3 class="failures">testComparisonOperatorAcceptance_10</h3>
+<span class="code">
+<pre>java.lang.IllegalArgumentException: Unhandled parameter types: [org.slizaa.neo4j.opencypher.openCypher.impl.ExpressionComparisonImpl@75d408bd (operator: =)]
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgComparableElement(RelalgBuilder.java:1704)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgLogicalExpression$32(RelalgBuilder.java:929)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgLogicalExpression(RelalgBuilder.java:936)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalgLogicalExpression(RelalgBuilder.java:1658)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalg$19(RelalgBuilder.java:682)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:685)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1628)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$null$2(RelalgBuilder.java:329)
+	at org.eclipse.xtext.xbase.lib.ObjectExtensions.operator_doubleArrow(ObjectExtensions.java:139)
+	at ingraph.cypher2relalg.RelalgBuilder.lambda$_buildRelalgSubQuery$3(RelalgBuilder.java:332)
+	at org.eclipse.xtext.xbase.lib.internal.FunctionDelegate.apply(FunctionDelegate.java:42)
+	at com.google.common.collect.Iterators$7.transform(Iterators.java:750)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
+	at org.eclipse.xtext.xbase.lib.IteratorExtensions.head(IteratorExtensions.java:140)
+	at org.eclipse.xtext.xbase.lib.IterableExtensions.head(IterableExtensions.java:119)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalgSubQuery(RelalgBuilder.java:338)
+	at ingraph.cypher2relalg.RelalgBuilder._buildRelalg(RelalgBuilder.java:283)
+	at ingraph.cypher2relalg.RelalgBuilder.buildRelalg(RelalgBuilder.java:1622)
+	at ingraph.cypher2relalg.RelalgBuilder.build(RelalgBuilder.java:214)
+	at ingraph.cypher2relalg.Cypher2Relalg.processCypher(Cypher2Relalg.java:22)
+	at ingraph.cypher2relalg.tck.tests.ComparisonOperatorAcceptanceParserTest.testComparisonOperatorAcceptance_10(ComparisonOperatorAcceptanceParserTest.java:265)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+	at org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">testComparisonOperatorAcceptance_01</td>
+<td>0.255s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testComparisonOperatorAcceptance_02</td>
+<td>0.160s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testComparisonOperatorAcceptance_03</td>
+<td>0.159s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testComparisonOperatorAcceptance_04</td>
+<td>0.162s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testComparisonOperatorAcceptance_05</td>
+<td>0.059s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testComparisonOperatorAcceptance_06</td>
+<td>0.322s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testComparisonOperatorAcceptance_07</td>
+<td>0.238s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testComparisonOperatorAcceptance_08</td>
+<td>0.113s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testComparisonOperatorAcceptance_09</td>
+<td>0.144s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="failures">testComparisonOperatorAcceptance_10</td>
+<td>0.151s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 3.0</a> at Mar 3, 2017 8:50:47 AM</p>
+</div>
+</div>
+</body>
+</html>
